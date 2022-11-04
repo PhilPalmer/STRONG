@@ -15,5 +15,5 @@ RUN cd $SPATH && \
     cd STRONG && \
     ./install_STRONG.sh
 
-# Add STRONG and conda installation dir to PATH (instead of doing 'conda activate')
-ENV PATH /STRONG/bin:/opt/conda/envs/STRONG/bin:$PATH
+# Add STRONG, BayesPaths, DESMAN, SPAdes and conda installation dir to PATH (instead of doing 'conda activate')
+ENV PATH /STRONG/bin:/STRONG/BayesPaths/bin:/STRONG/DESMAN/bin:/STRONG/SPAdes/assembler/bin:/opt/conda/envs/STRONG/bin:$PATH
